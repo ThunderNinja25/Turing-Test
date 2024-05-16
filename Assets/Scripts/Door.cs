@@ -1,20 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Search;
 using UnityEngine;
 
 public class Door : MonoBehaviour
 {
     [SerializeField] private Animator animator;
 
-    private void OnTriggerEnter(Collider other)
+    
+
+    public void OpenDoor()
     {
         animator.SetBool("KeyPress", true);
-
+        
         
     }
 
-    private void OnTriggerExit(Collider other)
+    public void CloseDoor()
     {
         animator.SetBool("KeyPress", false);
+        
     }
+
+    public void DynamicOpenCloseDoor()
+    {
+        if (animator.GetBool("KeyPress"))
+        {
+            CloseDoor();
+        }
+        else
+        {
+            OpenDoor();
+        }
+    }
+    
 }

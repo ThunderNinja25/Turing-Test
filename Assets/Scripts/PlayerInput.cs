@@ -7,6 +7,7 @@ using UnityEngine.Rendering;
 public class PlayerInput : MonoBehaviour
 {
     [SerializeField] private CharacterController characterController;
+    private IInteractable selectedInteraction;
 
     private Vector3 moveDirection;
     private Vector2 lookDirection;
@@ -19,6 +20,7 @@ public class PlayerInput : MonoBehaviour
     [SerializeField] private float bulletVelocity;
 
     [SerializeField] private Transform weaponTip;
+    [SerializeField] private Transform pickupTip;
 
     private const float gravity = -9.81f;
 
@@ -28,6 +30,7 @@ public class PlayerInput : MonoBehaviour
     [SerializeField] private float jumpForce;
 
     [SerializeField] private LayerMask layerFilter;
+    [SerializeField] private LayerMask interactableFilter;
     
     private void Start()
     {
@@ -42,6 +45,32 @@ public class PlayerInput : MonoBehaviour
         JumpPlayer();
         GravityCalculation();
         ShootWeapon();
+        Interact();
+    }
+
+    private void Interact()
+    {
+        Ray ray = new Ray(playerCam.transform.position, playerCam.transform.forward);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, 2f, interactableFilter)) //HIT SOMETHING ON RAYCAST
+        {
+
+            if(selectedInteraction == null) //BUT PREVIOUSLY DIDNT HAVE ANYTHING STORED
+            {
+                selectedInteraction = hit.collider.gameObject.GetComponent<IInteractable>();
+                selectedInteraction.OnHoverEnter();
+            }
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                selectedInteraction.Interact(this);
+            }
+        }
+        else if (selectedInteraction != null) //IF DIDNT FIND ANYTHING
+        {
+            selectedInteraction.OnHoverExit();
+            selectedInteraction = null;
+        }
     }
 
     private void ShootWeapon()
@@ -112,5 +141,17 @@ public class PlayerInput : MonoBehaviour
         playerCam.transform.localRotation = Quaternion.Euler(-lookDirection.y, 0, 0);
 
         transform.rotation = Quaternion.Euler(0, lookDirection.x, 0);
+    }
+
+    public void PickObject(Pickable pick)
+    {
+        pick.transform.position = pickupTip.position;
+        pick.transform.rotation = pickupTip.rotation;
+        pick.AttachToPlayer(characterController.attachedRigidbody);
+    }
+
+    public void DropObject(Pickable pick)
+    {
+
     }
 }

@@ -20,7 +20,7 @@ public class InteractableButton : MonoBehaviour, IInteractable
 
 
 
-    public void Interact(PlayerInput interactor)
+    public void Interact(PlayerInput player)
     {
         OnButtonPressed.Invoke();
         

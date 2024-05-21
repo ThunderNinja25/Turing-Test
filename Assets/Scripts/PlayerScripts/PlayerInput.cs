@@ -15,6 +15,7 @@ public class PlayerInput : MonoBehaviour
     [SerializeField] private Camera playerCam;
 
     [SerializeField] private Rigidbody projectile;
+    [SerializeField] private Rigidbody playerRigidBody;
 
     [SerializeField] private Vector3 velocity;
     [SerializeField] private float bulletVelocity;
@@ -143,15 +144,14 @@ public class PlayerInput : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, lookDirection.x, 0);
     }
 
-    public void PickObject(Pickable pick)
+    public Rigidbody GetPlayerRigidBody()
     {
-        pick.transform.position = pickupTip.position;
-        pick.transform.rotation = pickupTip.rotation;
-        pick.AttachToPlayer(characterController.attachedRigidbody);
+        return playerRigidBody;
     }
 
-    public void DropObject(Pickable pick)
+    public Transform GetPickUpLocation()
     {
-
+        return pickupTip;
     }
+
 }

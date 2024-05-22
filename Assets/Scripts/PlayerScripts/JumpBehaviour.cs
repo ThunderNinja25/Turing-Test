@@ -4,11 +4,21 @@ using UnityEngine;
 
 public class JumpBehaviour : MonoBehaviour
 {
-    private void JumpPlayer()
+    [SerializeField] private Rigidbody rb;
+    [SerializeField] private float groundCheckRadius;
+    [SerializeField] private LayerMask layerFilter;
+    [SerializeField] private float jumpForce;
+    public void JumpPlayer()
     {
-        if ()
+        if (IsGrounded())
         {
-            velocity.y = jumpForce;
+            rb.AddForce(Vector3.up * jumpForce * Time.deltaTime);
+            //velocity.y = jumpForce;
         }
+    }
+
+    private bool IsGrounded()
+    {
+        return Physics.CheckSphere(transform.position, groundCheckRadius, layerFilter);
     }
 }

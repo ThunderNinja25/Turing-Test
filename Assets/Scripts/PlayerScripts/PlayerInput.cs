@@ -13,7 +13,7 @@ public class PlayerInput : MonoBehaviour
     private Vector2 lookDirection;
 
     [SerializeField] private Camera playerCam;
-
+    [SerializeField] private ObjectPool bulletsPool;
     [SerializeField] private Rigidbody projectile;
     [SerializeField] private Rigidbody playerRigidBody;
 
@@ -78,9 +78,13 @@ public class PlayerInput : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Rigidbody projectileClone = Instantiate(projectile, weaponTip.position, weaponTip.rotation);
+            PooledObject pooledObj = bulletsPool.RetrievePoolObject();
+            Rigidbody projectileClone = pooledObj.GetRigidbody();
+            projectileClone.position = weaponTip.position;
+            projectileClone.rotation = weaponTip.rotation;
             projectileClone.AddForce(playerCam.transform.forward * bulletVelocity, ForceMode.Impulse);
-            Destroy(projectileClone.gameObject, 3f);
+            pooledObj.ResetPooledObject(4f);
+            //Destroy(projectileClone.gameObject, 3f);
         }
     }
 

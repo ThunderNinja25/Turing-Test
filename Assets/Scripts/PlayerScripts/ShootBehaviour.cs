@@ -9,7 +9,7 @@ public class ShootBehaviour : MonoBehaviour
     [SerializeField] private Camera playerCam;
     [SerializeField] private Rigidbody projectile;
     [SerializeField] private float bulletVelocity;
-    private void ShootWeapon()
+    public void ShootWeapon()
     {
         if (Input.GetMouseButtonDown(0))
         {

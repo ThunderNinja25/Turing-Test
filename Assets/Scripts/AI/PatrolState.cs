@@ -6,8 +6,10 @@ public class PatrolState : AIState
 {
     [SerializeField] private int waypointIndex;
     [SerializeField] private float distanceToStop;
-    public PatrolState(AIController aicontroller) : base(aicontroller)
+    public PatrolState(AIController con) : base(con)
     {
+
+        controller = con;
         distanceToStop = 1;
     }
 

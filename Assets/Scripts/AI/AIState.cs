@@ -12,8 +12,8 @@ public abstract class AIState
 
     public abstract void OnStateExit();
 
-    public AIState(AIController aicontroller)
+    public AIState(AIController controller)
     {
-        controller = aicontroller;
+        
     }
 }

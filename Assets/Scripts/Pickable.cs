@@ -6,6 +6,7 @@ public class Pickable : MonoBehaviour, IInteractable
 {
     [SerializeField] private Rigidbody myRigidbody;
     private FixedJoint joint;
+    private Transform originalParent;
     public void Interact(PlayerInput player)
     {
         if(transform.parent == null)

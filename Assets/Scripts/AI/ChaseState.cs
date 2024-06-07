@@ -20,14 +20,15 @@ public class ChaseState : AIState
     public override void OnStateRun()
     {
         controller.GetAgent().SetDestination(target.position);
-        if(controller.GetAgent().remainingDistance >= 15f)
+        if(controller.GetAgent().remainingDistance < 3f)
         {
-            controller.ChangeState(new AttackState(controller));
+            controller.ChangeState(new AttackState(target, controller));
         }
     }
 
     public ChaseState(Transform newTarget, AIController con) : base(con)
     {
+        controller = con;
         target = newTarget;
     }
 }

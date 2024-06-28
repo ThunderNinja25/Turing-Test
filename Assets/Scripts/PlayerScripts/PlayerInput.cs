@@ -6,32 +6,35 @@ using UnityEngine.Rendering;
 
 public class PlayerInput : MonoBehaviour
 {
+    
+    
+    
+
+    [Header("General Components")]
     [SerializeField] private CharacterController characterController;
-    [SerializeField] private ShootBehaviour shootBehaviour;
-    private IInteractable selectedInteraction;
-
-    private Vector3 moveDirection;
-    private Vector2 lookDirection;
-
     [SerializeField] private Camera playerCam;
-    [SerializeField] private ObjectPool bulletsPool;
-    [SerializeField] private Rigidbody projectile;
     [SerializeField] private Rigidbody playerRigidBody;
 
-
+    [Header("Movement Settings")]
+    private Vector3 moveDirection;
+    private Vector2 lookDirection;
     [SerializeField] private Vector3 velocity;
-    [SerializeField] private float bulletVelocity;
-
-    [SerializeField] private Transform weaponTip;
-    [SerializeField] private Transform pickupTip;
-
     private const float gravity = -9.81f;
-
     [SerializeField] private float speed;
     [SerializeField] private float lookSensitivity;
     [SerializeField] private float sprintMultiplier;
     [SerializeField] private float jumpForce;
 
+    [Header("Weapon Components")]
+    [SerializeField] private ObjectPool bulletsPool;
+    [SerializeField] private Rigidbody projectile;
+    [SerializeField] private ShootBehaviour shootBehaviour;
+    [SerializeField] private float bulletVelocity;
+    [SerializeField] private Transform weaponTip;
+    [SerializeField] private Transform pickupTip;
+
+    [Header("Misc.")]
+    private IInteractable selectedInteraction;
     [SerializeField] private LayerMask layerFilter;
     [SerializeField] private LayerMask interactableFilter;
     [SerializeField] private CommanderModule commanderModule;

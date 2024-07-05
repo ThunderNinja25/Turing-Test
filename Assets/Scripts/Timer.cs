@@ -8,12 +8,6 @@ public class Timer : MonoBehaviour
     [SerializeField] private float gameTime;
     [SerializeField] private UIManager uiManager;
     [SerializeField] private TextMeshProUGUI timerText;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -23,7 +17,6 @@ public class Timer : MonoBehaviour
 
         if( gameTime <= 0)
         {
-            
             TimerEnded();
             this.enabled = false;
         }

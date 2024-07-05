@@ -1808,7 +1808,6 @@ GameObject:
   - component: {fileID: 143193073}
   - component: {fileID: 143193072}
   - component: {fileID: 143193071}
-  - component: {fileID: 143193075}
   - component: {fileID: 143193074}
   m_Layer: 5
   m_Name: Panel
@@ -1908,18 +1907,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeObject: {fileID: 0}
---- !u!225 &143193075
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 143193069}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!1001 &145313078
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9014,6 +9001,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7098090262969930967, guid: ba8c6dc027fd3ee499b0b3fef76bac1a,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
     - target: {fileID: 8636348450838195323, guid: ba8c6dc027fd3ee499b0b3fef76bac1a,
         type: 3}
       propertyPath: m_Name
@@ -9570,7 +9562,6 @@ GameObject:
   - component: {fileID: 906227157}
   - component: {fileID: 906227156}
   - component: {fileID: 906227160}
-  - component: {fileID: 906227159}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -9716,19 +9707,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906227154}
   m_CullTransparentMesh: 1
---- !u!114 &906227159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 906227154}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8b77a92fea0b354bbe8cae0c8ea355e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeObject: {fileID: 0}
 --- !u!225 &906227160
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -10695,7 +10673,6 @@ GameObject:
   - component: {fileID: 988014515}
   - component: {fileID: 988014514}
   - component: {fileID: 988014519}
-  - component: {fileID: 988014518}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -10838,19 +10815,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988014512}
   m_CullTransparentMesh: 1
---- !u!114 &988014518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 988014512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8b77a92fea0b354bbe8cae0c8ea355e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeObject: {fileID: 0}
 --- !u!225 &988014519
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -17126,6 +17090,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7098090262969930967, guid: ba8c6dc027fd3ee499b0b3fef76bac1a,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
     - target: {fileID: 8636348450838195323, guid: ba8c6dc027fd3ee499b0b3fef76bac1a,
         type: 3}
       propertyPath: m_Name
@@ -24864,7 +24833,6 @@ GameObject:
   - component: {fileID: 2092562498}
   - component: {fileID: 2092562497}
   - component: {fileID: 2092562501}
-  - component: {fileID: 2092562500}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -25010,19 +24978,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2092562495}
   m_CullTransparentMesh: 1
---- !u!114 &2092562500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2092562495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8b77a92fea0b354bbe8cae0c8ea355e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeObject: {fileID: 0}
 --- !u!225 &2092562501
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -26289,6 +26244,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 77fe52bf911f0fd4fa62cc8c34e21c26, type: 2}
+    - target: {fileID: 417637971106071874, guid: 5598cf6478e609b4ca84869711de0d89,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
     - target: {fileID: 2238286214748350265, guid: 5598cf6478e609b4ca84869711de0d89,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -26371,13 +26331,33 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 77fe52bf911f0fd4fa62cc8c34e21c26, type: 2}
     - target: {fileID: 4796466341618086409, guid: 5598cf6478e609b4ca84869711de0d89,
         type: 3}
+      propertyPath: m_Size.x
+      value: 18.390957
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796466341618086409, guid: 5598cf6478e609b4ca84869711de0d89,
+        type: 3}
       propertyPath: m_Size.y
       value: 12.733137
       objectReference: {fileID: 0}
     - target: {fileID: 4796466341618086409, guid: 5598cf6478e609b4ca84869711de0d89,
         type: 3}
+      propertyPath: m_Size.z
+      value: 19.520227
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796466341618086409, guid: 5598cf6478e609b4ca84869711de0d89,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.2388115
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796466341618086409, guid: 5598cf6478e609b4ca84869711de0d89,
+        type: 3}
       propertyPath: m_Center.y
       value: 6.3665686
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796466341618086409, guid: 5598cf6478e609b4ca84869711de0d89,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.6565466
       objectReference: {fileID: 0}
     - target: {fileID: 5399354116175065222, guid: 5598cf6478e609b4ca84869711de0d89,
         type: 3}
@@ -26394,6 +26374,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parkour
       objectReference: {fileID: 0}
+    - target: {fileID: 7703890826035537568, guid: 5598cf6478e609b4ca84869711de0d89,
+        type: 3}
+      propertyPath: m_TagString
+      value: PuzzleRoom
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26407,6 +26392,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 129000976425491949, guid: 586ad5c0b0459664cb372531288d2a89,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 461219041704896100, guid: 586ad5c0b0459664cb372531288d2a89,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
     - target: {fileID: 748124407947158276, guid: 586ad5c0b0459664cb372531288d2a89,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -26417,11 +26412,31 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 77fe52bf911f0fd4fa62cc8c34e21c26, type: 2}
+    - target: {fileID: 1492618053934620053, guid: 586ad5c0b0459664cb372531288d2a89,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
     - target: {fileID: 1505757227622252485, guid: 586ad5c0b0459664cb372531288d2a89,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 77fe52bf911f0fd4fa62cc8c34e21c26, type: 2}
+    - target: {fileID: 2628782809812106436, guid: 586ad5c0b0459664cb372531288d2a89,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 3339678576942749765, guid: 586ad5c0b0459664cb372531288d2a89,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 3895739924949159509, guid: 586ad5c0b0459664cb372531288d2a89,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 18.229946
+      objectReference: {fileID: 0}
     - target: {fileID: 3895739924949159509, guid: 586ad5c0b0459664cb372531288d2a89,
         type: 3}
       propertyPath: m_Size.y
@@ -26429,8 +26444,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3895739924949159509, guid: 586ad5c0b0459664cb372531288d2a89,
         type: 3}
+      propertyPath: m_Size.z
+      value: 19.298155
+      objectReference: {fileID: 0}
+    - target: {fileID: 3895739924949159509, guid: 586ad5c0b0459664cb372531288d2a89,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.5399742
+      objectReference: {fileID: 0}
+    - target: {fileID: 3895739924949159509, guid: 586ad5c0b0459664cb372531288d2a89,
+        type: 3}
       propertyPath: m_Center.y
       value: 6.4541802
+      objectReference: {fileID: 0}
+    - target: {fileID: 3895739924949159509, guid: 586ad5c0b0459664cb372531288d2a89,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.6913061
       objectReference: {fileID: 0}
     - target: {fileID: 4045272750329655700, guid: 586ad5c0b0459664cb372531288d2a89,
         type: 3}
@@ -26487,6 +26517,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 77fe52bf911f0fd4fa62cc8c34e21c26, type: 2}
+    - target: {fileID: 5258830923039156165, guid: 586ad5c0b0459664cb372531288d2a89,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
     - target: {fileID: 5286053157592193795, guid: 586ad5c0b0459664cb372531288d2a89,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -26497,15 +26532,60 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 77fe52bf911f0fd4fa62cc8c34e21c26, type: 2}
+    - target: {fileID: 5837638702156931447, guid: 586ad5c0b0459664cb372531288d2a89,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 5922465970354718907, guid: 586ad5c0b0459664cb372531288d2a89,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 6006136062919122822, guid: 586ad5c0b0459664cb372531288d2a89,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 6194912928997666474, guid: 586ad5c0b0459664cb372531288d2a89,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
     - target: {fileID: 6213647607572811293, guid: 586ad5c0b0459664cb372531288d2a89,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 77fe52bf911f0fd4fa62cc8c34e21c26, type: 2}
+    - target: {fileID: 6387739856053110321, guid: 586ad5c0b0459664cb372531288d2a89,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 6710054193412719947, guid: 586ad5c0b0459664cb372531288d2a89,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 6741081525053278980, guid: 586ad5c0b0459664cb372531288d2a89,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 6782731418906633223, guid: 586ad5c0b0459664cb372531288d2a89,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
     - target: {fileID: 7207842557666953498, guid: 586ad5c0b0459664cb372531288d2a89,
         type: 3}
       propertyPath: m_Name
       value: ParkourMultiBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 7207842557666953498, guid: 586ad5c0b0459664cb372531288d2a89,
+        type: 3}
+      propertyPath: m_TagString
+      value: PuzzleRoom
       objectReference: {fileID: 0}
     - target: {fileID: 7609907176601509938, guid: 586ad5c0b0459664cb372531288d2a89,
         type: 3}
@@ -26517,6 +26597,26 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 77fe52bf911f0fd4fa62cc8c34e21c26, type: 2}
+    - target: {fileID: 7991532531303754163, guid: 586ad5c0b0459664cb372531288d2a89,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 8008702379539707176, guid: 586ad5c0b0459664cb372531288d2a89,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 8316522172538257185, guid: 586ad5c0b0459664cb372531288d2a89,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 8413024353634026612, guid: 586ad5c0b0459664cb372531288d2a89,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
     - target: {fileID: 8628406897692424731, guid: 586ad5c0b0459664cb372531288d2a89,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -26532,6 +26632,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 77fe52bf911f0fd4fa62cc8c34e21c26, type: 2}
+    - target: {fileID: 9181307748394140111, guid: 586ad5c0b0459664cb372531288d2a89,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26600,10 +26705,50 @@ PrefabInstance:
       propertyPath: OnPuzzleStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1339999955}
+    - target: {fileID: 3864397892665917762, guid: 58d52a5ff36575446b3fd0884e76f48c,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 6146275995023914297, guid: 58d52a5ff36575446b3fd0884e76f48c,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 18.471645
+      objectReference: {fileID: 0}
+    - target: {fileID: 6146275995023914297, guid: 58d52a5ff36575446b3fd0884e76f48c,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 8.720493
+      objectReference: {fileID: 0}
+    - target: {fileID: 6146275995023914297, guid: 58d52a5ff36575446b3fd0884e76f48c,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 19.221434
+      objectReference: {fileID: 0}
+    - target: {fileID: 6146275995023914297, guid: 58d52a5ff36575446b3fd0884e76f48c,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.35372734
+      objectReference: {fileID: 0}
+    - target: {fileID: 6146275995023914297, guid: 58d52a5ff36575446b3fd0884e76f48c,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 4.3602467
+      objectReference: {fileID: 0}
+    - target: {fileID: 6146275995023914297, guid: 58d52a5ff36575446b3fd0884e76f48c,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.5298605
+      objectReference: {fileID: 0}
     - target: {fileID: 7439739265679809979, guid: 58d52a5ff36575446b3fd0884e76f48c,
         type: 3}
       propertyPath: m_Name
       value: FirstPuzzle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7439739265679809979, guid: 58d52a5ff36575446b3fd0884e76f48c,
+        type: 3}
+      propertyPath: m_TagString
+      value: PuzzleRoom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27034,6 +27179,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 791853648032131057, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 1967307191762043087, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
     - target: {fileID: 2546033445751844401, guid: 1152c766f5db6084ab259fd261bea16d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27084,16 +27239,156 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2720621870677086794, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 2977699935189270448, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 3343353452614731651, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 3463075100352485723, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 3694582199592977866, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 3724407829710400859, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 4341439222986263348, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
     - target: {fileID: 4830035469958028313, guid: 1152c766f5db6084ab259fd261bea16d,
         type: 3}
       propertyPath: OnPuzzleStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1139006462}
+    - target: {fileID: 4977321451181660136, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 5278752887315692137, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 5611112995349920569, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 5940190819004804765, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 5955638900660412237, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 5987323102225728510, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 6343569676472779650, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 6506429250567330275, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 6818844714142709280, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 18.796442
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818844714142709280, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 9.110967
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818844714142709280, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 19.007244
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818844714142709280, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.38359833
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818844714142709280, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 4.5554833
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818844714142709280, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.6121502
+      objectReference: {fileID: 0}
+    - target: {fileID: 7387193286865051636, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 7487836942038436033, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 7630753155082694614, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 7999220766851987165, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
     - target: {fileID: 8550288546102062620, guid: 1152c766f5db6084ab259fd261bea16d,
         type: 3}
       propertyPath: m_Name
       value: MultiBlocks
       objectReference: {fileID: 0}
+    - target: {fileID: 8550288546102062620, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: m_TagString
+      value: PuzzleRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916174686649407542, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 9104210898947923779, guid: 1152c766f5db6084ab259fd261bea16d,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27124,6 +27419,56 @@ PrefabInstance:
       propertyPath: m_Name
       value: OneWorks
       objectReference: {fileID: 0}
+    - target: {fileID: 3428517498659481788, guid: 93f5eb393915a6347805fd4e36740ec5,
+        type: 3}
+      propertyPath: m_TagString
+      value: PuzzleRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 3790951549647706675, guid: 93f5eb393915a6347805fd4e36740ec5,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 4083919379273375233, guid: 93f5eb393915a6347805fd4e36740ec5,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
+    - target: {fileID: 4246791625207566777, guid: 93f5eb393915a6347805fd4e36740ec5,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 18.176281
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246791625207566777, guid: 93f5eb393915a6347805fd4e36740ec5,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 8.504078
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246791625207566777, guid: 93f5eb393915a6347805fd4e36740ec5,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 19.356712
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246791625207566777, guid: 93f5eb393915a6347805fd4e36740ec5,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.51314163
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246791625207566777, guid: 93f5eb393915a6347805fd4e36740ec5,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 4.252039
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246791625207566777, guid: 93f5eb393915a6347805fd4e36740ec5,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.07164383
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924685664488928482, guid: 93f5eb393915a6347805fd4e36740ec5,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
     - target: {fileID: 5206575707604573497, guid: 93f5eb393915a6347805fd4e36740ec5,
         type: 3}
       propertyPath: correctRigidBody
@@ -27232,6 +27577,36 @@ PrefabInstance:
       propertyPath: OnPuzzleStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 230474682}
+    - target: {fileID: 1327240538751128286, guid: dedfb80202f53934bb1d34b6318ceaab,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 18.976578
+      objectReference: {fileID: 0}
+    - target: {fileID: 1327240538751128286, guid: dedfb80202f53934bb1d34b6318ceaab,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 9.626993
+      objectReference: {fileID: 0}
+    - target: {fileID: 1327240538751128286, guid: dedfb80202f53934bb1d34b6318ceaab,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 19.153044
+      objectReference: {fileID: 0}
+    - target: {fileID: 1327240538751128286, guid: dedfb80202f53934bb1d34b6318ceaab,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.34944153
+      objectReference: {fileID: 0}
+    - target: {fileID: 1327240538751128286, guid: dedfb80202f53934bb1d34b6318ceaab,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 4.8134966
+      objectReference: {fileID: 0}
+    - target: {fileID: 1327240538751128286, guid: dedfb80202f53934bb1d34b6318ceaab,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.65570736
+      objectReference: {fileID: 0}
     - target: {fileID: 2625587071228004065, guid: dedfb80202f53934bb1d34b6318ceaab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27282,10 +27657,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6870926166989800414, guid: dedfb80202f53934bb1d34b6318ceaab,
+        type: 3}
+      propertyPath: incompleteCutscene
+      value: 
+      objectReference: {fileID: 1151740824}
     - target: {fileID: 7000275680772020673, guid: dedfb80202f53934bb1d34b6318ceaab,
         type: 3}
       propertyPath: m_Name
       value: ShootBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 7000275680772020673, guid: dedfb80202f53934bb1d34b6318ceaab,
+        type: 3}
+      propertyPath: m_TagString
+      value: PuzzleRoom
       objectReference: {fileID: 0}
     - target: {fileID: 8048554294174911175, guid: dedfb80202f53934bb1d34b6318ceaab,
         type: 3}

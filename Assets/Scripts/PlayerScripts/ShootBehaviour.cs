@@ -16,7 +16,7 @@ public class ShootBehaviour : MonoBehaviour
 
     private void Start()
     {
-        ChangeWeapon(0);
+        
     }
     public void ShootWeapon()
     {
@@ -29,12 +29,5 @@ public class ShootBehaviour : MonoBehaviour
             projectileClone.AddForce(playerCam.transform.forward * equippedWeapon.GetFireRate(), ForceMode.Impulse);
             pooledObj.ResetPooledObject(4f);
         }
-    }
-
-    public void ChangeWeapon(int index)
-    {
-        index = Mathf.Clamp(index, 0, inventory.Count - 1);
-        equippedWeapon = inventory[index];
-        Debug.Log("My weapon is now " + equippedWeapon.WeaponName);
     }
 }

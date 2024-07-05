@@ -6,10 +6,6 @@ using UnityEngine.Rendering;
 
 public class PlayerInput : MonoBehaviour
 {
-    
-    
-    
-
     [Header("General Components")]
     [SerializeField] private CharacterController characterController;
     [SerializeField] private Camera playerCam;
@@ -37,7 +33,6 @@ public class PlayerInput : MonoBehaviour
     private IInteractable selectedInteraction;
     [SerializeField] private LayerMask layerFilter;
     [SerializeField] private LayerMask interactableFilter;
-    [SerializeField] private CommanderModule commanderModule;
     
     private void Start()
     {
@@ -53,32 +48,6 @@ public class PlayerInput : MonoBehaviour
         GravityCalculation();
         ShootWeapon();
         Interact();
-        ChangeWeapon();
-        SendCommand();
-    }
-
-    private void SendCommand()
-    {
-        if (Input.GetMouseButtonDown(1))
-        {
-            commanderModule.CreateCommand();
-        }
-    }
-
-    private void ChangeWeapon()
-    {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            shootBehaviour.ChangeWeapon(0);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            shootBehaviour.ChangeWeapon(1);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            shootBehaviour.ChangeWeapon(2);
-        }
     }
 
     private void Interact()

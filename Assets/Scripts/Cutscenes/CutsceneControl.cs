@@ -5,7 +5,7 @@ using UnityEngine.Playables;
 
 public class CutsceneControl : MonoBehaviour
 {
-    
+    [SerializeField] private GameObject cutscene;
     [SerializeField] private PlayableDirector director;
     // Start is called before the first frame update
     void Start()
@@ -29,4 +29,17 @@ public class CutsceneControl : MonoBehaviour
         GameManager.Singleton.LockPlayer(false);
         Destroy(gameObject);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            cutscene.gameObject.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+        
+    }
+
+    
 }

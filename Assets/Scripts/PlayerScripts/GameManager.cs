@@ -51,11 +51,6 @@ public class GameManager : MonoBehaviour
         OnLevelFinished?.Invoke();
     }
 
-    public void PlayerDied()
-    {
-
-    }
-
     public void LockPlayer(bool isLocked)
     {
         player.enabled = !isLocked;
